@@ -23,7 +23,7 @@ ol {
 header {
   width: 100%;
   height: 70px;
-  border: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
 }
 header nav {
   height: 70px;
@@ -45,9 +45,11 @@ header nav ul li {
   font-size: 18px;
   margin-left: 40px;
   padding-top: 5px;
+}
+header nav ul li a {
   color: #706C82;
 }
-header nav ul li:first-of-type {
+header nav ul li a.active {
   color: red;
 }
 header nav .search {
@@ -70,31 +72,38 @@ header nav .search .text {
 header nav .search .text a {
   color: #F46565;
 }
+article .banner {
+  height: 300px;
+}
 article .banner a {
-  position: relative;
   display: block;
   width: 100%;
   height: 300px;
   background: url(../img/original.jpg) no-repeat center center;
 }
-article .banner a .time {
+article .banner a .ding {
+  position: relative;
+  height: 300px;
+}
+article .banner a .ding .time {
   position: absolute;
-  top: 26px;
-  right: 169px;
+  top: 25px;
+  right: 30px;
   width: 400px;
   height: 250px;
   z-index: 10;
+  animation: play 2s linear ;
 }
-article .banner a .time p {
+article .banner a .ding .time p {
   text-align: center;
   color: #FEFDED;
   font-size: 35px;
 }
-article .banner a .time .details {
+article .banner a .ding .time .details {
   padding-left: 80px;
   margin: 20px 0px;
 }
-article .banner a .time .details li {
+article .banner a .ding .time .details li {
   float: left;
   font-size: 17px;
   color: #FFFBFF;
@@ -103,14 +112,14 @@ article .banner a .time .details li {
   margin-right: 15px;
   border-radius: 3px;
 }
-article .banner a .time .times {
+article .banner a .ding .time .times {
   margin: 30px 0px;
   width: 400px;
   text-align: center;
   color: #FFFBFF;
   font-size: 18px;
 }
-article .banner a .time .text {
+article .banner a .ding .time .text {
   width: 220px;
   height: 45px;
   font-size: 25px;
@@ -123,18 +132,25 @@ main section h2 {
   height: 70px;
   line-height: 70px;
 }
-main section .box {
+main section .bigbigbox {
+  position: relative;
+}
+main section .bigbigbox .box {
   width: 1100px;
   height: 310px;
   position: relative;
+  overflow: hidden;
 }
-main section .box ul {
+main section .bigbigbox .box .bigbox {
   position: absolute;
   top: 0px;
   left: 0px;
-  width: 3300px;
+  width: 4400px;
 }
-main section .box ul li {
+main section .bigbigbox .box .bigbox ul {
+  float: left;
+}
+main section .bigbigbox .box .bigbox ul li {
   float: left;
   text-align: center;
   width: 250px;
@@ -143,55 +159,380 @@ main section .box ul li {
   border-radius: 5px;
   margin-right: 30px;
 }
-main section .box ul li:nth-of-type(4),
-main section .box ul li:nth-of-type(8),
-main section .box ul li:nth-of-type(12) {
+main section .bigbigbox .box .bigbox ul li:nth-of-type(4),
+main section .bigbigbox .box .bigbox ul li:nth-of-type(8),
+main section .bigbigbox .box .bigbox ul li:nth-of-type(12) {
   margin-right: 0;
 }
-main section .box ul li img {
+main section .bigbigbox .box .bigbox ul li img {
   width: 252px;
 }
-main section .box ul li h5 {
+main section .bigbigbox .box .bigbox ul li h5 {
   padding: 10px 10px;
   font-size: 18px;
   text-align: center;
   margin-bottom: 3px;
 }
-main section .box ul li .num {
+main section .bigbigbox .box .bigbox ul li .num {
   color: red;
   padding: 3px 8px;
   border: 1px solid red;
   border-radius: 5px;
   margin-right: 10px;
 }
-main section .box ul li p {
+main section .bigbigbox .box .bigbox ul li p {
   margin-top: 10px;
   font-size: 18px;
 }
-main section .box ul li p .num2 {
+main section .bigbigbox .box .bigbox ul li p .num2 {
   color: red;
   margin-right: 2px;
 }
-main section .box ul li span {
+main section .bigbigbox .box .bigbox ul li span {
   color: red;
 }
-main section .box .left-btn {
+main section .bigbigbox .left-btn {
   position: absolute;
   top: 50%;
-  left: -50px;
+  left: -53px;
   transform: translateY(-50%);
   border: 0px;
   font-size: 60px;
   color: #E5E5E5;
   background-color: transparent;
+  outline: none;
+  cursor: pointer;
 }
-main section .box .right-btn {
+main section .bigbigbox .right-btn {
   position: absolute;
   top: 50%;
-  right: -50px;
+  right: -53px;
   transform: translateY(-50%);
   border: 0px;
   font-size: 60px;
   color: #E5E5E5;
   background-color: transparent;
+  outline: none;
+  cursor: pointer;
+}
+main .report {
+  width: 100%;
+  height: 620px;
+  background-color: #F7F7F7;
+}
+main .report .report1 .title {
+  height: 70px;
+}
+main .report .report1 .title h2 {
+  float: left;
+}
+main .report .report1 .title span {
+  float: right;
+  color: red;
+  line-height: 60px;
+  cursor: pointer;
+}
+main .report .report1 ul {
+  height: 500px;
+}
+main .report .report1 ul li {
+  float: left;
+  width: 250px;
+  height: 240px;
+  margin-right: 30px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+main .report .report1 ul li:nth-of-type(4) {
+  margin-right: 0;
+}
+main .report .report1 ul li:nth-of-type(8) {
+  margin-right: 0;
+}
+main .report .report1 ul li a {
+  display: block;
+  padding: 0px;
+  height: 148px;
+}
+main .report .report1 ul li a img {
+  width: 250px;
+}
+main .report .report1 ul li p {
+  padding: 5px 10px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #494552;
+}
+main .report .report1 ul li .text {
+  position: relative;
+}
+main .report .report1 ul li .text .wenzi {
+  float: left;
+  color: #A5A0A1;
+  font-size: 13px;
+}
+main .report .report1 ul li .text .zan {
+  float: right;
+  color: #A5A0A1;
+  margin-right: 10px;
+  font-size: 12px;
+  cursor: pointer;
+}
+main .report .report1 ul li .text .zan::before {
+  content: "\e601";
+}
+main .report .report1 ul li .text .zan.active::before {
+  content: "\e601";
+  color: red;
+}
+main .report .report1 ul li .text .messige {
+  float: right;
+  color: #A5A0A1;
+  font-size: 12px;
+}
+main .guid {
+  width: 100%;
+  height: 380px;
+  background-color: #fff;
+}
+main .guid .guid1 .title {
+  height: 70px;
+}
+main .guid .guid1 .title h2 {
+  float: left;
+}
+main .guid .guid1 .title span {
+  float: right;
+  color: red;
+  line-height: 60px;
+  cursor: pointer;
+}
+main .guid .guid1 ul {
+  height: 380px;
+}
+main .guid .guid1 ul li {
+  position: relative;
+  float: left;
+  width: 250px;
+  height: 250px;
+  margin-right: 30px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+main .guid .guid1 ul li:nth-of-type(4) {
+  margin-right: 0;
+}
+main .guid .guid1 ul li a {
+  display: block;
+  padding: 0px;
+  height: 148px;
+}
+main .guid .guid1 ul li a img {
+  width: 250px;
+}
+main .guid .guid1 ul li p {
+  padding: 10px 10px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #494552;
+}
+main .guid .guid1 ul li .text .heart {
+  float: right;
+  color: #A5A0A1;
+  margin-right: 10px;
+  font-size: 12px;
+  cursor: pointer;
+}
+main .guid .guid1 ul li .text .heart::before {
+  content: "\e615";
+}
+main .guid .guid1 ul li .text .heart.active::before {
+  content: "\e603";
+  color: red;
+}
+main .guid .guid1 ul li .text .messige {
+  float: right;
+  color: #A5A0A1;
+  font-size: 12px;
+}
+main .play {
+  width: 100%;
+  background-color: #F7F7F7;
+}
+main .play .play1 .title {
+  height: 70px;
+}
+main .play .play1 .title h2 {
+  float: left;
+}
+main .play .play1 .title span {
+  float: right;
+  color: red;
+  line-height: 60px;
+  cursor: pointer;
+}
+main .play .play1 ul li {
+  position: relative;
+  float: left;
+  width: 250px;
+  height: 240px;
+  margin-right: 30px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+main .play .play1 ul li:nth-of-type(4) {
+  margin-right: 0;
+}
+main .play .play1 ul li:nth-of-type(8) {
+  margin-right: 0;
+}
+main .play .play1 ul li:nth-of-type(12) {
+  margin-right: 0;
+}
+main .play .play1 ul li a {
+  display: block;
+  padding: 0px;
+  height: 148px;
+}
+main .play .play1 ul li a img:nth-of-type(1) {
+  width: 250px;
+}
+main .play .play1 ul li a img:nth-of-type(2) {
+  position: absolute;
+  width: 250px;
+  bottom: -14px;
+  left: 0px;
+}
+main .play .play1 ul li p {
+  padding: 5px 10px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #494552;
+}
+main .play .play1 ul li .text {
+  position: relative;
+}
+main .play .play1 ul li .text .wenzi {
+  float: left;
+  color: #F56F5C;
+  font-size: 14px;
+}
+main .play .play1 ul li .text .heart {
+  float: right;
+  color: #A5A0A1;
+  margin-right: 10px;
+  font-size: 12px;
+  cursor: pointer;
+}
+main .play .play1 ul li .text .heart::before {
+  content: "\e615";
+}
+main .play .play1 ul li .text .heart.active::before {
+  content: "\e603";
+  color: red;
+}
+main .play .play1 ul li .text .messige {
+  float: right;
+  color: #A5A0A1;
+  font-size: 12px;
+}
+main .play .play1 .much {
+  text-align: center;
+  color: #F56F5C;
+  margin: 40px auto;
+  cursor: pointer;
+  font-size: 15px;
+}
+footer {
+  position: relative;
+  width: 100;
+  height: 350px;
+  background-color: #505050;
+}
+footer .foot {
+  padding-top: 40px;
+}
+footer .foot img {
+  float: left;
+}
+footer .foot .logo {
+  float: left;
+  margin: 0px 30px;
+}
+footer .foot .logo img {
+  width: 121px;
+  margin-bottom: 30px;
+}
+footer .foot .logo .text {
+  width: 130px;
+}
+footer .foot .logo .text p {
+  color: #8A8887;
+  font-size: 14px;
+  font-weight: 600;
+}
+footer .foot .logo .text p:nth-of-type(2) {
+  margin-top: 15px;
+}
+footer .foot .link {
+  float: left;
+  margin-left: 10px;
+  height: 200px;
+}
+footer .foot .link dl {
+  float: left;
+  margin-left: 30px;
+}
+footer .foot .link dl:nth-of-type(3) {
+  margin-top: 20px;
+}
+footer .foot .link dl dt {
+  margin-bottom: 30px;
+}
+footer .foot .link dl dt a {
+  color: #EAF2DC;
+}
+footer .foot .link dl a dd {
+  color: #848986;
+  font-size: 13px;
+  font-weight: 600;
+}
+footer .wenzi {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 14px;
+  color: #8A8887;
+}
+footer .backtop {
+  position: absolute;
+  bottom: 39px;
+  right: 210px;
+  background-color: #E7E7E7;
+  border-radius: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+footer .backtop span {
+  color: #fff;
+  font-size: 30px;
+}
+@keyframes play {
+  0% {
+    top: -310px;
+    right: -310px;
+  }
+  30% {
+    top: -200px;
+    right: -150px;
+  }
+  100% {
+    top: 25px;
+    right: 30px;
+  }
 }

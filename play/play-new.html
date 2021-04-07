@@ -1,0 +1,231 @@
+<!--
+ * @Author: YuanSun
+ * @Date: 2021-04-01 20:20:20
+ * @LastEditors: YuanSun
+ * @LastEditTime: 2021-04-07 09:40:35
+ * @Description: file content
+ * @FilePath: \s2\SY极果\JG\play\play-new.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/play-new.css">
+    <link rel="stylesheet" href="../css/font/iconfont.css">
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header>
+        <div class="nav">
+            <nav class="wrapper">
+                <img src="../img/logonew.png">
+                <ul>
+                    <li>
+                        <a href="../use/index.html">首页</a>
+                    </li>
+                    <li>
+                        <a href="../play/play-new.html" class="active">酷玩</a></li>
+                    <li>
+                        <a href="../guid/guid-new.html">
+                        导购
+                    </a></li>
+                    <li>
+                        <a href="../use/use1all.html">试用</a></li>
+                    <li>
+                        <a href="../report/report-new.html">报告</a></li>
+                </ul>
+                <div class="search">
+                    <span class="iconfont">&#xe602;</span>
+                    <div class="text">
+                        <a href="#">注册</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="nav-msg wrapper">
+            <div class="nav-find">
+                <h2>发现酷玩</h2>
+            </div>
+            <div class="navs">
+                <ul>
+                    <li class="active"><a href="../play/play-new.html">最新</a></li>
+                    <li><a href="../play/play-hot.html">最热</a></li>
+                    <li><a href="../play/find-play.html">品类</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- 头部结束 -->
+    <main class="wrapper">
+        <div class="content">
+            <ul id="list1">
+                <li>
+                    <div class="goods">
+                        <div class="img">
+                            <img src="../img/k1.jpg" alt="">
+                        </div>
+                        <div class="back">
+                            <div class="word">
+                                <p>SCiO 微型光普仪</p>
+                                <p>可以测定食物成分及营养</p>
+                            </div>
+                            <div class="price">
+                                <p>¥ 1212</p>
+                            </div>
+                            <div class="heart">
+                                <span class="iconfont">3</span>
+
+                                <span><img src="../img/reply.png" alt="">3</span>
+
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <script id="li_tmpl" type="text/x-dot-template">
+                    {{~it:value:index}}
+                    <li>
+                        <div class="goods">
+                            <div class="img">
+                                <img src="{{=value.img}}" alt="">
+                            </div>
+                            <div class="back">
+                                <div class="word">
+                                    <p>{{=value.description}}</p>
+                                    <p>{{=value.text}}</p>
+                                </div>
+                                <div class="price">
+                                    <p>{{=value.price}}</p>
+                                </div>
+                                <div class="heart">
+                                    <span class="iconfont">3</span>
+
+                                    <span><img src="../img/reply.png" alt="">3</span>
+
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    {{~}}
+                </script>
+
+            </ul>
+            <div class="loaded">
+                <div class="status-msg">
+                    <span><img src="../img/more.png" alt="">点击加载更多</span>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <div class="foot wrapper clearfix">
+            <img src="../img/code.png">
+            <div class="logo clearfix">
+                <img src="../img/logoImg.jpg">
+                <div class="text">
+                    <p>全球酷玩试用导购平台 酷.新奇.好玩.品质
+                    </p>
+                    <p>
+                        微信添加'jgjg'<br> 获取我们的服务
+                    </p>
+                </div>
+            </div>
+            <div class="link clearfix">
+                <dl>
+                    <dt>
+                    <a href="../use/help.html">
+                        免费试用
+                    </a>
+                </dt>
+                    <a href="#">
+                        <dd>试用流程</dd>
+                        <dd>如何提高工作率</dd>
+                    </a>
+                </dl>
+
+                <dl>
+                    <dt>
+                    <a href="#">
+                        友情链接
+                    </a>
+                </dt>
+                    <a href="#">
+                        <dd>智东西</dd>
+                        <dd>搜狐</dd>
+                        <dd>搜狐数码</dd>
+                        <dd>疯狂数码</dd>
+                        <dd>泡泡网</dd>
+                        <dd>ZUK社区</dd>
+                        <dd>极客公园</dd>
+                        <dd>果库</dd>
+                    </a>
+                </dl>
+
+                <dl>
+                    <dt>
+                </dt>
+                    <a href="#">
+                        <dd>WEIBUSI</dd>
+                        <dd>腾讯科技</dd>
+                        <dd>凤凰科技</dd>
+                        <dd>PConline</dd>
+                        <dd>3W咖啡</dd>
+                        <dd>亿觅emie</dd>
+                        <dd> 易迅易启玩</dd>
+                        <dd>果库</dd>
+                    </a>
+                </dl>
+
+
+                <dl>
+                    <dt>
+                    <a href="#">
+                        购买功率
+                    </a>
+                </dt>
+                    <a href="#">
+                        <dd>美亚海涛教程</dd>
+                        <dd>美亚海涛教程</dd>
+                        <dd>美亚海涛教程</dd>
+                        <dd>kickstarter 众筹购买攻略</dd>
+                        <dd>indiegogo 众筹购买攻略</dd>
+                    </a>
+                </dl>
+
+
+
+                <dl>
+                    <dt>
+                    <a href="../use/about.html">
+                        厂商合作
+                    </a>
+                </dt>
+                    <a href="#">
+                        <dd>关于极果</dd>
+                        <dd>联系我们</dd>
+                        <dd>厂商合作：uhxsajnsa</dd>
+                        <dd>CEO邮箱：CEOsjcskcmskc</dd>
+                    </a>
+                </dl>
+
+
+            </div>
+
+        </div>
+        <p class="wrapper wenzi">2616 极果版权所有</p>
+        <div class="backtop">
+            <span class="iconfont">&#xe609;</span>
+        </div>
+    </footer>
+    <script src="../js/doT.min.js"></script>
+    <script src="../js/ajax.js"></script>
+    <script src="../js/play-new.js"></script>
+</body>
+
+
+</html>
