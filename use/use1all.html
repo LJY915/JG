@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>试用</title>
     <link rel="stylesheet" href="../css/use1all.css">
     <link rel="stylesheet" href="http://at.alicdn.com/t/font_2458286_ez7p4iqkta5.css">
 </head>
@@ -92,23 +92,31 @@
                     <p>剩余时间2天</p>
                 </a>
             </li>
-            <script id="li_tmpl" type="text/x-dot-template">
+            <li>
+                <a href="#">
+                    <img src="../img/hot5.jpg">
+                    <h3>巴慕达 The Toaster 烤面包机</h3>
+                    <span class="num1">3032</span>
+                    <span class="num2">20台</span>
+                    <p>
+                        <span>1392</span> 申请
+                    </p>
+                    <p>剩余时间2天</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="../img/hot5.jpg">
+                    <h3>巴慕达 The Toaster 烤面包机</h3>
+                    <span class="num1">3032</span>
+                    <span class="num2">20台</span>
+                    <p>
+                        <span>1392</span> 申请
+                    </p>
+                    <p>剩余时间2天</p>
+                </a>
+            </li>
 
-                {{~it:value:index}}
-                <li>
-                    <a href="#">
-                        <img src="{{=value.img}}">
-                        <h3>{{=value.text}}</h3>
-                        <span class="num1">3032</span>
-                        <span class="num2">20台</span>
-                        <p>
-                            <span>1392</span> 申请
-                        </p>
-                        <p>剩余时间2天</p>
-                    </a>
-                </li>
-                {{~}}
-            </script>
 
         </ul>
         <p class="much">
@@ -220,16 +228,42 @@
     <script src="../js/doT.min.js"></script>
     <script src="../js/ajax.js"></script>
     <script src="../js/user1.js"></script>
+    <script src="../js/mycookie.js"></script>
+
+
+    <script id="li_tmpl" type="text/x-dot-template">
+
+        {{~it:value:index}}
+        <li>
+            <a href="#">
+                <img src="{{=value.img}}">
+                <h3>{{=value.text}}</h3>
+                <span class="num1">3032</span>
+                <span class="num2">20台</span>
+                <p>
+                    <span>1392</span> 申请
+                </p>
+                <p>剩余时间2天</p>
+            </a>
+        </li>
+        {{~}}
+    </script>
+
     <script>
-        ajax({    
-            type:   'get',
-                url:   'http://192.168.31.254:3000/useing/public',
-                success:   function(result)  {        
-                console.log(result)      
-                var  tmpText  =  doT.template(document.getElementById('li_tmpl').innerText);        
-                document.getElementById("list").innerHTML  =  tmpText(result);    
-            }
-        });
+        let p = document.querySelector("main .much")
+
+
+        p.onclick = function() {
+            ajax({    
+                type:   'get',
+                    url:   'http://192.168.31.254:3000/useing/public',
+                    success:   function(result)  {        
+                    console.log(result)      
+                    var  tmpText  =  doT.template(document.getElementById('li_tmpl').innerText);        
+                    document.getElementById("list").innerHTML  =  tmpText(result);    
+                }
+            });
+        }
     </script>
 </body>
 

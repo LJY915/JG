@@ -2,7 +2,7 @@
  * @Author: AndyGao
  * @Date: 2021-03-15 10:27:56
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2021-03-26 20:51:51
+ * @LastEditTime: 2021-04-07 09:59:44
  * @Description: file content
  * @FilePath: \code\6JavaScript\day10\animate.js
  */

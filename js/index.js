@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-03-31 19:22:10
- * @LastEditTime: 2021-04-06 19:10:23
+ * @LastEditTime: 2021-04-07 10:01:14
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \vscode\01-HTML\项目\极果网站\js\index.js
@@ -30,7 +30,7 @@ function time() {
     span.innerHTML = `申请时间剩余:${day}天${hour}小时${minute}分钟`
 }
 time();
-setInterval(time, 1000);
+setInterval(time, 2000);
 //首页轮播
 let uls = document.querySelectorAll(".box .bigbox ul");
 let bigbox = document.querySelector(".box .bigbox");
@@ -69,7 +69,7 @@ right_btn.onclick = function() {
 function autoplay() {
     setInterval(function() {
         right_btn.onclick();
-    }, 2000)
+    }, 3000)
 }
 autoplay();
 //报告精选模块 点赞功能
