@@ -199,18 +199,36 @@ main{
      }
  }
  .heart{
-     float: left;
-     margin-top: 17px;
-    width: 50px;
-    height: 30px; 
-    font-size: 12px;
-    color: #999;
-    img{
-        width: 12px;
-        height: 12px;
-        
-    }
- }
+    float: right;
+    margin-top: 17px;
+   width: 50px;
+   height: 30px; 
+   font-size: 12px;
+   color: #999;
+   span{
+       font-size: 12px;
+      
+       img{
+           width: 12px;
+           height: 12px;
+           
+       }
+  
+   }
+   span:nth-of-type(1)::before{
+       content: "\e630";
+       font-size: 16px;
+   }
+   span:nth-of-type(1).active::before{
+       content: "\e64f";
+       color: #f00;
+       font-size: 16px;
+   }
+
+   
+
+}
+ 
  .loaded{
      float: left;
      width: 1100px;

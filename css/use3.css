@@ -93,10 +93,15 @@ header article .banner .top .text span {
   margin-right: 25px;
   cursor: pointer;
 }
-header article .banner .top .text span.active {
-  color: red;
+header article .banner .top .text span a {
+  color: #CFCFCF;
+}
+header article .banner .top .text .active {
   border-bottom: 4px solid red;
   padding-bottom: 8px;
+}
+header article .banner .top .text .active a {
+  color: red;
 }
 header .bottom {
   width: 100%;
@@ -114,12 +119,14 @@ header .bottom .text ul li {
   float: left;
   margin-right: 80px;
   height: 50px;
-  color: #BABBB6;
   line-height: 50px;
   font-size: 17px;
   cursor: pointer;
 }
-header .bottom .text ul li.active {
+header .bottom .text ul li a {
+  color: #BABBB6;
+}
+header .bottom .text ul li a.active {
   color: #000;
 }
 main {

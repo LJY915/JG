@@ -2,9 +2,9 @@
  * @Author: YuanSun
  * @Date: 2021-04-05 18:53:36
  * @LastEditors: YuanSun
- * @LastEditTime: 2021-04-05 19:19:48
+ * @LastEditTime: 2021-04-07 11:45:20
  * @Description: file content
- * @FilePath: \s2\SY极果\JG\js\发现酷玩.js
+ * @FilePath: \SY极果\JG\js\find-play.js
  */
 let backtop = document.querySelector(".backtop");
 let container = document.querySelector(".container");

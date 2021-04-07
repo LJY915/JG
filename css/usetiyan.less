@@ -100,10 +100,17 @@ article{
                     width:135px;
                     margin-right:25px;
                     cursor: pointer;
-                    &.active{
+                    a{
+                       color: #CFCFCF; 
+                    }
+                   
+                }
+                .active{
+                    
+                    border-bottom:4px solid red;
+                    padding-bottom: 8px;
+                    a{
                         color:red;
-                        border-bottom:4px solid red;
-                        padding-bottom: 8px;
                     }
                 }
             }
@@ -123,12 +130,14 @@ article{
               float: left;
               margin-right:80px;
                height:50px;
-               color:#BABBB6;
                line-height: 50px;
                 font-size: 17px;
                 cursor: pointer;
-                &.active{
-                    color:#000;
+                a{
+                    color:#BABBB6;
+                    &.active{
+                        color:#000;
+                    }
                 }
           }
       }
