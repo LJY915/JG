@@ -184,18 +184,6 @@ main .container .left .goods .good .word-msg p {
   line-height: 20px;
   width: 200px;
 }
-main .container .left .goods .good .heart {
-  float: right;
-  margin-top: 10px;
-  width: 50px;
-  height: 30px;
-  font-size: 12px;
-  color: #999;
-}
-main .container .left .goods .good .heart img {
-  width: 12px;
-  height: 12px;
-}
 .about {
   margin: 15px 0;
   width: 700px;
@@ -365,4 +353,28 @@ footer .backtop {
 footer .backtop span {
   color: #fff;
   font-size: 30px;
+}
+.heart {
+  float: right;
+  margin-top: 17px;
+  width: 50px;
+  height: 30px;
+  font-size: 12px;
+  color: #999;
+}
+.heart span {
+  font-size: 12px;
+}
+.heart span img {
+  width: 12px;
+  height: 12px;
+}
+.heart span:nth-of-type(1)::before {
+  content: "\e630";
+  font-size: 16px;
+}
+.heart span:nth-of-type(1).active::before {
+  content: "\e64f";
+  color: #f00;
+  font-size: 16px;
 }

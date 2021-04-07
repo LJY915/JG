@@ -173,6 +173,9 @@ main{
                     height: 96px;
                    
                 }
+                img:hover{
+                    animation: move 1s linear;
+                }
                 p{
                     text-align: center;
                     margin: 10px 0 0 -6px;
@@ -251,6 +254,9 @@ main{
                     height: 96px;
                    
                 }
+                img:hover{
+                    animation: move 1s linear;
+                }
                 p{
                     text-align: center;
                     margin: 10px 0 0 -6px;
@@ -261,6 +267,7 @@ main{
                    
                 }
             }
+            
         }
     }
     
@@ -368,4 +375,16 @@ footer{
        }
    }
   
+}
+
+@keyframes move{
+    0%{
+        transform: rotateY(60deg);
+    }
+    50%{
+        transform: rotateY(120deg);
+    }
+    100%{
+        transform: rotateY(180deg);
+    }
 }

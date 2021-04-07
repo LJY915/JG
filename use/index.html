@@ -20,7 +20,7 @@
                     <a href="../use/index.html" class="active">首页</a>
                 </li>
                 <li>
-                    <a href="..play/play-new.html">酷玩</a></li>
+                    <a href="../play/play-new.html">酷玩</a></li>
                 <li>
                     <a href="../guid/guid-new.html">
                         导购
@@ -618,7 +618,11 @@
                     </li>
                 </ul>
                 <p class="much">
-                    <span class="iconfont  icon-demo-copy"></span> 点击加载更多
+                    <span class="iconfont  icon-demo-copy">点击加载更多</span> <br>
+
+                    <img src="../img/loading-icon.gif">
+
+
                 </p>
             </section>
         </section>
@@ -793,7 +797,13 @@
     <script>
         let spans = document.querySelector("main .report .report1 .title span");
         let span2 = document.querySelector("main .guid .guid1 .title span");
-        let span3 = document.querySelector("main .play .play1 .much span")
+        let span3 = document.querySelector("main .play .play1 .much span");
+        let img = document.querySelector("main .play .play1 .much img")
+        console.log(img)
+
+
+
+
         spans.onclick = function() {
             ajax({    
                 type:   'get',
@@ -805,7 +815,6 @@
                 }
             });
         }
-
 
         span2.onclick = function() {
             ajax({    
@@ -820,15 +829,8 @@
         }
 
         span3.onclick = function() {
-            ajax({    
-                type:   'get',
-                    url:   'http://192.168.31.254:3000/play/hot',
-                    success:   function(result)  {        
-                    console.log(result)      
-                    var  tmpText  =  doT.template(document.getElementById('li_tmpl').innerText);        
-                    document.getElementById("list3").innerHTML  =  tmpText(result.slice(0, 12));    
-                }
-            });
+            this.style.display = "none";
+            img.style.display = "inline-block";
         }
     </script>
 </body>

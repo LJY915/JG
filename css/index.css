@@ -92,7 +92,7 @@ article .banner a .ding .time {
   width: 400px;
   height: 250px;
   z-index: 10;
-  animation: play 2s linear ;
+  animation: play 3s linear ;
 }
 article .banner a .ding .time p {
   text-align: center;
@@ -448,6 +448,11 @@ main .play .play1 .much {
   margin: 40px auto;
   cursor: pointer;
   font-size: 15px;
+}
+main .play .play1 .much img {
+  text-align: center;
+  display: none;
+  margin: 10px;
 }
 footer {
   position: relative;

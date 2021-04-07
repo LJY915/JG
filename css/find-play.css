@@ -159,6 +159,9 @@ main .container .content .column p {
   width: 96px;
   height: 96px;
 }
+.good-column ul li .img img:hover {
+  animation: move 1s linear;
+}
 .good-column ul li .img p {
   text-align: center;
   margin: 10px 0 0 -6px;
@@ -226,6 +229,9 @@ main .contain .contents .columns p {
 .goods-column ul li .imgs img {
   width: 96px;
   height: 96px;
+}
+.goods-column ul li .imgs img:hover {
+  animation: move 1s linear;
 }
 .goods-column ul li .imgs p {
   text-align: center;
@@ -328,4 +334,15 @@ footer .backtop {
 footer .backtop span {
   color: #fff;
   font-size: 30px;
+}
+@keyframes move {
+  0% {
+    transform: rotateY(60deg);
+  }
+  50% {
+    transform: rotateY(120deg);
+  }
+  100% {
+    transform: rotateY(180deg);
+  }
 }
