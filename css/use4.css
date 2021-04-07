@@ -1,309 +1,255 @@
 * {
-    padding: 0px;
-    margin: 0px;
+  padding: 0px;
+  margin: 0px;
 }
-
 ul,
 ol {
-    list-style-type: none;
+  list-style-type: none;
 }
-
 .wrapper {
-    width: 1100px;
-    margin: 0px auto;
+  width: 1100px;
+  margin: 0px auto;
 }
-
 .clearfix::after {
-    content: "";
-    display: block;
-    height: 0px;
-    clear: both;
-    visibility: hidden;
+  content: "";
+  display: block;
+  height: 0px;
+  clear: both;
+  visibility: hidden;
 }
-
 * {
-    text-decoration: none;
+  text-decoration: none;
 }
-
 header {
-    width: 100%;
-    height: 272px;
+  width: 100%;
+  height: 272px;
 }
-
 header nav {
-    height: 70px;
+  height: 70px;
 }
-
 header nav img {
-    float: left;
-    width: 150px;
-    padding: 5px 0px;
+  float: left;
+  width: 150px;
+  padding: 5px 0px;
 }
-
 header nav ul {
-    float: left;
-    margin-left: 80px;
-    width: 500px;
-    height: 70px;
+  float: left;
+  margin-left: 80px;
+  width: 500px;
+  height: 70px;
 }
-
 header nav ul li {
-    float: left;
-    line-height: 70px;
-    font-size: 18px;
-    margin-left: 40px;
-    padding-top: 5px;
+  float: left;
+  line-height: 70px;
+  font-size: 18px;
+  margin-left: 40px;
+  padding-top: 5px;
 }
-
 header nav ul li:first-of-type {
-    color: red;
+  color: red;
 }
-
 header nav ul li a {
-    color: #706C82;
+  color: #706C82;
 }
-
 header nav .search {
-    float: right;
-    width: 100px;
-    height: 70px;
+  float: right;
+  width: 100px;
+  height: 70px;
 }
-
 header nav .search span {
-    font-size: 20px;
-    line-height: 70px;
-    font-weight: bold;
+  font-size: 20px;
+  line-height: 70px;
+  font-weight: bold;
 }
-
 header nav .search .text {
-    padding: 3px 8px;
-    border: 2px solid #F46565;
-    float: right;
-    border-radius: 3px;
-    margin: 20px 0px;
+  padding: 3px 8px;
+  border: 2px solid #F46565;
+  float: right;
+  border-radius: 3px;
+  margin: 20px 0px;
 }
-
 header nav .search .text a {
-    color: #F46565;
+  color: #F46565;
 }
-
 header article {
-    width: 100%;
-    height: 260px;
-    box-shadow: -1px -1px 2px 1px #ccc;
+  width: 100%;
+  height: 260px;
+  box-shadow: -1px -1px 2px 1px #ccc;
 }
-
 header article .banner .top h3 {
-    text-align: center;
-    font-size: 40px;
-    color: #343537;
-    padding: 30px 0px;
+  text-align: center;
+  font-size: 40px;
+  color: #343537;
+  padding: 30px 0px;
 }
-
 header article .banner .top .text {
-    text-align: center;
-    font-size: 20px;
-    color: #CFCFCF;
+  text-align: center;
+  font-size: 20px;
+  color: #CFCFCF;
 }
-
 header article .banner .top .text span {
-    display: inline-block;
-    width: 135px;
-    margin-right: 25px;
-    cursor: pointer;
+  display: inline-block;
+  width: 135px;
+  margin-right: 25px;
+  cursor: pointer;
 }
-
 header article .banner .top .text span a {
-    color: #CFCFCF;
+  color: #CFCFCF;
 }
-
 header article .banner .top .text .active {
-    border-bottom: 4px solid red;
-    padding-bottom: 8px;
+  border-bottom: 4px solid red;
+  padding-bottom: 8px;
 }
-
 header article .banner .top .text .active a {
-    color: red;
+  color: red;
 }
-
 header .bottom {
-    width: 100%;
-    border-top: 1px solid #ccc;
+  width: 100%;
+  border-top: 1px solid #ccc;
 }
-
 header .bottom .text {
-    text-align: center;
+  text-align: center;
 }
-
 header .bottom .text ul {
-    margin-left: 335px;
-    width: 600px;
-    height: 50px;
+  margin-left: 335px;
+  width: 600px;
+  height: 50px;
 }
-
 header .bottom .text ul li {
-    float: left;
-    margin-right: 80px;
-    height: 50px;
-    line-height: 50px;
-    font-size: 17px;
-    cursor: pointer;
+  float: left;
+  margin-right: 80px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 17px;
+  cursor: pointer;
 }
-
 header .bottom .text ul li a {
-    color: #BABBB6;
+  color: #BABBB6;
 }
-
 header .bottom .text ul li a.active {
-    color: #000;
+  color: #000;
 }
-
 main {
-    background-color: #F7F7F7;
+  background-color: #F7F7F7;
 }
-
 main ul li {
-    float: left;
-    width: 248px;
-    height: 310px;
-    border: 2px solid #F1F1F1;
-    background-color: #fff;
-    border-radius: 5px;
-    text-align: center;
-    margin-right: 30px;
-    margin-bottom: 20px;
+  float: left;
+  width: 248px;
+  height: 310px;
+  border: 2px solid #F1F1F1;
+  background-color: #fff;
+  border-radius: 5px;
+  text-align: center;
+  margin-right: 30px;
+  margin-bottom: 20px;
 }
-
 main ul li:nth-of-type(4),
 main ul li:nth-of-type(8),
 main ul li:nth-of-type(12),
 main ul li:nth-of-type(16),
 main ul li:nth-of-type(20) {
-    margin-right: 0;
+  margin-right: 0;
 }
-
 main ul li img {
-    width: 248px;
+  width: 248px;
 }
-
 main ul li h3 {
-    padding: 10px 10px;
-    color: #000;
+  padding: 10px 10px;
+  color: #000;
 }
-
 main ul li .num1,
 main ul li .num2 {
-    border: 1px solid red;
-    padding: 3px 8px;
-    border-radius: 5px;
-    color: #000;
-    margin-bottom: 10px;
+  border: 1px solid red;
+  padding: 3px 8px;
+  border-radius: 5px;
+  color: #000;
+  margin-bottom: 10px;
 }
-
 main ul li .num1:first-of-type,
 main ul li .num2:first-of-type {
-    color: red;
-    margin-right: 10px;
+  color: red;
+  margin-right: 10px;
 }
-
 main ul li p {
-    margin-top: 8px;
-    color: #000;
+  margin-top: 8px;
+  color: #000;
 }
-
 main ul li p span {
-    color: red;
+  color: red;
 }
-
 main .much {
-    text-align: center;
-    color: #F56F5C;
-    margin: 40px auto;
-    cursor: pointer;
-    font-size: 15px;
+  text-align: center;
+  color: #F56F5C;
+  margin: 40px auto;
+  cursor: pointer;
+  font-size: 15px;
 }
-
 footer {
-    position: relative;
-    width: 100;
-    height: 350px;
-    background-color: #505050;
+  position: relative;
+  width: 100;
+  height: 350px;
+  background-color: #505050;
 }
-
 footer .foot {
-    padding-top: 40px;
+  padding-top: 40px;
 }
-
 footer .foot img {
-    float: left;
+  float: left;
 }
-
 footer .foot .logo {
-    float: left;
-    margin: 0px 30px;
+  float: left;
+  margin: 0px 30px;
 }
-
 footer .foot .logo img {
-    width: 121px;
-    margin-bottom: 30px;
+  width: 121px;
+  margin-bottom: 30px;
 }
-
 footer .foot .logo .text {
-    width: 130px;
+  width: 130px;
 }
-
 footer .foot .logo .text p {
-    color: #8A8887;
-    font-size: 14px;
-    font-weight: 600;
+  color: #8A8887;
+  font-size: 14px;
+  font-weight: 600;
 }
-
 footer .foot .logo .text p:nth-of-type(2) {
-    margin-top: 15px;
+  margin-top: 15px;
 }
-
 footer .foot .link {
-    float: left;
-    margin-left: 10px;
-    height: 200px;
+  float: left;
+  margin-left: 10px;
+  height: 200px;
 }
-
 footer .foot .link dl {
-    float: left;
-    margin-left: 30px;
+  float: left;
+  margin-left: 30px;
 }
-
 footer .foot .link dl:nth-of-type(3) {
-    margin-top: 20px;
+  margin-top: 20px;
 }
-
 footer .foot .link dl dt {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
-
 footer .foot .link dl dt a {
-    color: #EAF2DC;
+  color: #EAF2DC;
 }
-
 footer .foot .link dl a dd {
-    color: #848986;
-    font-size: 13px;
-    font-weight: 600;
+  color: #848986;
+  font-size: 13px;
+  font-weight: 600;
 }
-
 footer .wenzi {
-    margin-top: 50px;
-    text-align: center;
-    font-size: 14px;
-    color: #8A8887;
+  margin-top: 50px;
+  text-align: center;
+  font-size: 14px;
+  color: #8A8887;
 }
-
 footer .backtop {
-    position: absolute;
-    bottom: 39px;
-    right: 210px;
-    background-color: #E7E7E7;
-    border-radius: 5px;
-    padding: 8px 12px;
-    cursor: pointer;
+  position: absolute;
+  bottom: 39px;
+  right: 210px;
+  background-color: #E7E7E7;
+  border-radius: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
 }
